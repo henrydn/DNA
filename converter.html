@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>🧬 DNA Translator</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>
+            🧬 DNA Translator
+        </h1>
+        <div>
+            <label>DNA Sequence 
+                <input type="radio" id="coding" name="strand" value="coding" checked> Coding Strand 
+                <input type="radio" id="template" name="strand" value="template"> Template Strand 
+                <br/> </label>
+            <textarea id="dna"></textarea>
+        </label>
+        </div>
+        <div>
+            <label>RNA Sequence <button id="copyRna" class="icon">📋</button> <br/> </label>
+            <div id="rna" class="textarea"></div>
+        </label>
+        </div>
+        <div>
+            <label>Amino Acid Sequence <button id="copyAmino" class="icon">📋</button>
+                <input type="radio" id="threeLetterCode" name="code" value="threeLetterCode" checked> 3-Letter Code
+                <input type="radio" id="oneLetterCode" name="code" value="oneLetterCode"> 1-Letter Code
+                <input type="radio" id="name" name="code" value="name"> Name
+                <br/> </label>
+            <div id="amino" class="textarea"></div>
+        </div>
+        <div>
+            <div id="aminoInfo"></div>
+        </div>
+    </label>
+    </body>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+    <script src="amino.js"></script>
+    <script src="converter.js"></script>
+</html>
